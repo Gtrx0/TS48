@@ -72,12 +72,12 @@ $EndComp
 $Comp
 L device:C_Small C4
 U 1 1 5B4A929A
-P 16925 10725
-F 0 "C4" H 16935 10795 50  0000 L CNN
-F 1 "4.7uF" H 16935 10645 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 16925 10725 50  0001 C CNN
-F 3 "" H 16925 10725 50  0001 C CNN
-	1    16925 10725
+P 17000 10775
+F 0 "C4" H 17010 10845 50  0000 L CNN
+F 1 "4.7uF" H 17010 10695 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 17000 10775 50  0001 C CNN
+F 3 "" H 17000 10775 50  0001 C CNN
+	1    17000 10775
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1070,8 +1070,6 @@ Wire Wire Line
 Wire Wire Line
 	17400 10625 17400 10725
 Connection ~ 19775 10625
-Wire Wire Line
-	17400 10625 16925 10625
 Connection ~ 17400 10625
 Connection ~ 17400 10725
 Wire Wire Line
@@ -1110,17 +1108,7 @@ Wire Wire Line
 	17700 11025 17400 11025
 Wire Wire Line
 	17400 11025 17400 10925
-Wire Wire Line
-	17400 10925 16925 10925
-Wire Wire Line
-	16925 10925 16925 10825
 Connection ~ 17400 10925
-Wire Wire Line
-	16925 10625 16700 10625
-Connection ~ 16925 10625
-Wire Wire Line
-	16925 10925 16700 10925
-Connection ~ 16925 10925
 Wire Wire Line
 	20025 12625 19025 12625
 Wire Wire Line
@@ -1299,4 +1287,38 @@ F 3 "~" H 19475 12850 50  0001 C CNN
 	1    19475 12850
 	1    0    0    -1  
 $EndComp
+Text GLabel 22575 10625 2    50   Input ~ 0
+COL5
+Text GLabel 22575 11025 2    50   Input ~ 0
+COL1
+Text GLabel 22575 11525 2    50   Input ~ 0
+COL0
+Text GLabel 22575 12025 2    50   Input ~ 0
+ROW3
+Text GLabel 22575 12125 2    50   Input ~ 0
+ROW2
+Text GLabel 22575 12225 2    50   Input ~ 0
+COL4
+Text GLabel 22575 12325 2    50   Input ~ 0
+ROW1
+Text GLabel 22575 12425 2    50   Input ~ 0
+COL3
+Text GLabel 22575 12525 2    50   Input ~ 0
+COL2
+Text GLabel 22600 13025 2    50   Input ~ 0
+ROW0
+Wire Wire Line
+	16700 10925 17000 10925
+Wire Wire Line
+	16700 10625 17000 10625
+Wire Wire Line
+	17000 10875 17000 10925
+Connection ~ 17000 10925
+Wire Wire Line
+	17000 10925 17400 10925
+Wire Wire Line
+	17000 10675 17000 10625
+Connection ~ 17000 10625
+Wire Wire Line
+	17000 10625 17400 10625
 $EndSCHEMATC
