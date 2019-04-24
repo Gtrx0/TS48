@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:TS48_right-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
@@ -232,7 +232,7 @@ D+
 Text GLabel 19850 11525 0    51   Input ~ 0
 D-
 $Comp
-L atmel:ATmega32U4 U1
+L TS48_right-rescue:ATmega32U4-atmel U1
 U 1 1 5B4A9FC2
 P 21275 12175
 F 0 "U1" H 20375 13875 50  0000 C CNN
@@ -492,7 +492,7 @@ $EndComp
 Text GLabel 19250 15775 3    51   Input ~ 0
 RGBIN
 $Comp
-L conn:Conn_02x03_Odd_Even SPI1
+L TS48_right-rescue:Conn_02x03_Odd_Even-conn SPI1
 U 1 1 5B544D39
 P 21200 10000
 F 0 "SPI1" H 21250 10200 50  0000 C CNN
@@ -1220,7 +1220,7 @@ F 3 "" H 22925 11425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Audio-Jack-4 TRRS1
+L TS48_right-rescue:Audio-Jack-4-conn TRRS1
 U 1 1 5B94F9A5
 P 25625 10875
 F 0 "TRRS1" H 25601 11100 50  0000 C CNN
